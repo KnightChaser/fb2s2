@@ -10,5 +10,7 @@ USER_AGENT: str = (
 
 REQUEST_TIMEOUT_SEC: int = 60
 
-CACHE_DIR: Path = Path(".cache/freebbs")
+# Host-scoped cache:
+#   e.g., https://abc.onion/bbs/123 -> .cache/abc/<hash>.html|.meta.json
+CACHE_ROOT: Path = Path(".cache")
 CACHE_TTL_SEC: int = 600  # 10 minutes
