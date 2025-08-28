@@ -1,6 +1,7 @@
-# fb2s2
+# nanods
+> nanogram darkweb scraper
 
-(WIP) A simple dark web parser that has a small and simple cache system
+A simple dark web parser that has a small and simple cache system
 to avoid re-downloading the same page multiple times.
 
 ### Installation
