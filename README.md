@@ -14,6 +14,15 @@ sudo apt-get update
 sudo apt-get install tor -y
 sudo systemctl start tor
 ```
+3. If `tor` started successfully, then go to the configuration file(`/etc/tor/torrc`)
+   and configure the following line. After that, restart the `tor` daemon. If everything works well,
+   you're ready to run the project.
+```
+SOCKSPort 9050
+ControlPort 9051
+CookieAuthentication 1
+MaxCircuitDirtiness 60
+```
 
 ### Run it
 
